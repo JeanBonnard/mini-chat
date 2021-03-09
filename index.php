@@ -28,22 +28,22 @@ $datefinal = $day.' '.$date.' '.$month.' '.$hour.':'.$minute.':'.$seconde;*/
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
-    <title>mini-chat</title>
+    <title>🗯mini-chat</title>
 </head>
 <body>
-<h1 class="title">MINI CHAT</h1>
+<h1 class="title" id="mini">MINI 🗯 CHAT</h1>
 <div class="row">
     <div class="d-flex">
-        <form action="connection-chat.php" method="post">
-            <label for="pseudo">pseudo</label>
-            <input type="text" id="pseudo" name="pseudo">
+        <form action="connection-chat.php" method="post" class="top-form">
+            <!--<label for="pseudo">pseudo</label>-->
+            <input type="text" id="pseudo" name="pseudo" placeholder="pseudo">
 
-            <label for="pseudo">password</label>
-            <input type="password" id="pass" name="pass">
+            <!--<label for="pseudo">password</label>-->
+            <input type="password" id="pass" name="pass" placeholder="password">
 
-            <button type="submit" class="btn btn-success">se connecter</button>
+            <button type="submit" class="btn btn-success connect">se connecter</button>
         </form>
-        <br><br><a href="inscription.php"><button type="button" class="btn btn-success">s'inscrire</button></a>
+        <br><br><a href="inscription.php" class="sign"><button type="button" class="btn btn-success">s'inscrire</button></a>
     </div>
 </div>
 <div class="row">
@@ -80,12 +80,12 @@ $datefinal = $day.' '.$date.' '.$month.' '.$hour.':'.$minute.':'.$seconde;*/
 
 <form  method="post" id="myForm">
 
-    <input type="text" name="nick" value="<?=$_COOKIE['cookieName']." "."(".$_COOKIE['cookieIp'].") "?>">
+    <input type="text" style="background-color:<?=$_COOKIE['cookieColor']?>;color: black" name="nick" value="<?=$_COOKIE['cookieName']." "."(".$_COOKIE['cookieIp'].") "?>" disabled>
     <input type="hidden" name="idUser" id="idUser" value="<?=$_GET['id']?>">
     <div class="form-floating">
         <input type="text" id="message" class="form-control input-text" name="message" >
         <label for="floatingTextarea">Commencer à chater</label>
-    </div><br>
+    </div>
     <button class="btn btn-success sendMessage" >envoyer</button>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

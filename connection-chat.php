@@ -17,7 +17,7 @@ if (isset($_POST['pseudo']) && !empty($_POST['pseudo'])){
             if ($pseudo===$user['pseudo'] && $pass===$user['password']){
                 setcookie('cookieName',$user['pseudo']);
                 setcookie('cookieIp', $_SERVER['REMOTE_ADDR']);
-                //setcookie('cookieColor',$user['color']);
+                setcookie('cookieColor',$user['color']);
                 //var_dump($_SERVER['REMOTE_ADDR']);
             }
 
