@@ -20,13 +20,14 @@ body{
     border: solid 1px black;
     border-top-right-radius: 30px;
     background-size: cover;
+    border-bottom-right-radius: 30px;
 }
 .hi{
     background-color: white;
     text-align: center;
 }
 .message-content{
-    overflow: scroll;
+    overflow-y: scroll;
     background-image: url("img/back.jpg");
     background-size: cover;
 }
