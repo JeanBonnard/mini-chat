@@ -28,6 +28,7 @@ body{
 .message-content{
     overflow: scroll;
     background-image: url("img/back.jpg");
+    background-size: cover;
 }
 .sign{
     position: absolute;
@@ -46,8 +47,15 @@ body{
     margin-left: 0.5vw;
 }
 #myForm{
-    margin-top: -1.2vw;
+    margin-top: -0.5vw;
 }
 .sendMessage{
     margin-top: 0.5vw;
+}
+.section-chat{
+    margin-top: -10px;
+    width: 100vw;
+}
+.div-row{
+    width: 100vw;
 }

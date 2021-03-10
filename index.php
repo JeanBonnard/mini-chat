@@ -31,9 +31,9 @@ $datefinal = $day.' '.$date.' '.$month.' '.$hour.':'.$minute.':'.$seconde;*/
     <title>🗯mini-chat</title>
 </head>
 <body>
-<h1 class="title" id="mini">MINI 🗯 CHAT</h1>
-<div class="row">
-    <div class="d-flex">
+<h1 class="title" id="mini" style="color: orange">MINI 🗯 CHAT</h1>
+<div class="row div-row">
+    <div class="d-flex div-row">
         <form action="connection-chat.php" method="post" class="top-form">
             <!--<label for="pseudo">pseudo</label>-->
             <input type="text" id="pseudo" name="pseudo" placeholder="pseudo">
@@ -46,7 +46,7 @@ $datefinal = $day.' '.$date.' '.$month.' '.$hour.':'.$minute.':'.$seconde;*/
         <br><br><a href="inscription.php" class="sign"><button type="button" class="btn btn-success">s'inscrire</button></a>
     </div>
 </div>
-<div class="row">
+<div class="row section-chat">
     <!--<div class="container">-->
         <div class="col-10 space-chat message-content">
 
